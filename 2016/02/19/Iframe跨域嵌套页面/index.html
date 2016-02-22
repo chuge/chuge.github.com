@@ -57,15 +57,22 @@
 
 
 
-<meta name="description">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta name="description" content="遇到的问题手机端，在父页面内嵌跨域iframe的实践， 关于fixed失效和devicemotion失效 与第三方客户某微，需要交互。应对方要求，他们提供父级页面，然后用iframe跨域引用我们的页面。
+1.计算子页面高度把问题分解，第一个要解决的是iframe引入的页面高度不等，需要在子页面加载完，计算子页面的高度后调整iframe的高度。
+var resizeHeight = (functio">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Iframe跨域嵌套页面">
+<meta property="og:url" content="http://yoursite.com/2016/02/19/Iframe跨域嵌套页面/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description">
+<meta property="og:description" content="遇到的问题手机端，在父页面内嵌跨域iframe的实践， 关于fixed失效和devicemotion失效 与第三方客户某微，需要交互。应对方要求，他们提供父级页面，然后用iframe跨域引用我们的页面。
+1.计算子页面高度把问题分解，第一个要解决的是iframe引入的页面高度不等，需要在子页面加载完，计算子页面的高度后调整iframe的高度。
+var resizeHeight = (functio">
+<meta property="og:updated_time" content="2016-02-22T02:44:22.638Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo">
-<meta name="twitter:description">
+<meta name="twitter:title" content="Iframe跨域嵌套页面">
+<meta name="twitter:description" content="遇到的问题手机端，在父页面内嵌跨域iframe的实践， 关于fixed失效和devicemotion失效 与第三方客户某微，需要交互。应对方要求，他们提供父级页面，然后用iframe跨域引用我们的页面。
+1.计算子页面高度把问题分解，第一个要解决的是iframe引入的页面高度不等，需要在子页面加载完，计算子页面的高度后调整iframe的高度。
+var resizeHeight = (functio">
 
 
 
@@ -83,7 +90,7 @@
   };
 </script>
 
-  <title> Hexo </title>
+  <title> Iframe跨域嵌套页面 | Hexo </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="">
@@ -102,9 +109,7 @@
     
   
 
-  <div class="container one-collumn sidebar-position-left 
-   page-home 
- ">
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -183,24 +188,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
 
+  <div id="posts" class="posts-expand">
     
-
-    
-    
-      
-      
-        
-        
-        
-      
-
-      
-    
-
-    
-      
 
   
   
@@ -220,102 +210,7 @@
             
             
               
-                
-                <a class="post-title-link" href="/2016/02/22/Work-in-duiba/" itemprop="url">
-                  Work in duiba
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">發表於</span>
-            <time itemprop="dateCreated" datetime="2016-02-22T10:54:36+08:00" content="2016-02-22">
-              2016-02-22
-            </time>
-          </span>
-
-          
-
-          
-            
-          
-
-          
-
-          
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h4 id="2015-12-27"><a href="#2015-12-27" class="headerlink" title="2015-12-27"></a>2015-12-27</h4><p>iframe weibo跨域嵌套问题</p>
-<h4 id="2015-12-28"><a href="#2015-12-28" class="headerlink" title="2015-12-28"></a>2015-12-28</h4><p>camera 360（webview不能缩小，定义320宽度的viewport）适配问题</p>
-<h4 id="2015-12-30"><a href="#2015-12-30" class="headerlink" title="2015-12-30"></a>2015-12-30</h4><p>通知用户未领取的礼物</p>
-<h4 id="2016-01-05"><a href="#2016-01-05" class="headerlink" title="2016-01-05"></a>2016-01-05</h4><p>摇奖机新增猴年新年皮肤</p>
-<h4 id="2016-01-18"><a href="#2016-01-18" class="headerlink" title="2016-01-18"></a>2016-01-18</h4><p>前端静态资源发布系统</p>
-<h4 id="2016-01-18-1"><a href="#2016-01-18-1" class="headerlink" title="2016-01-18"></a>2016-01-18</h4><p>刮刮卡新增猴年新年皮肤</p>
-<h4 id="2016-01-20"><a href="#2016-01-20" class="headerlink" title="2016-01-20"></a>2016-01-20</h4><p>收货地址，fastclick版本源码bug</p>
-<h4 id="2016-01-28"><a href="#2016-01-28" class="headerlink" title="2016-01-28"></a>2016-01-28</h4><p>元宵节答题活动-答题配置页面</p>
-<h4 id="2016-02-15"><a href="#2016-02-15" class="headerlink" title="2016-02-15"></a>2016-02-15</h4><p>开发者后台离职同事未提交引起的bug</p>
-
-          
-        
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/02/19/Iframe跨域嵌套页面/" itemprop="url">
-                  Iframe跨域嵌套页面
-                </a>
+                Iframe跨域嵌套页面
               
             
           </h1>
@@ -353,9 +248,7 @@
       
 
       
-        
-          
-            <hr>
+        <hr>
 <h3 id="遇到的问题"><a href="#遇到的问题" class="headerlink" title="遇到的问题"></a>遇到的问题</h3><p>手机端，在父页面内嵌跨域iframe的实践， 关于fixed失效和devicemotion失效 与第三方客户某微，需要交互。应对方要求，他们提供父级页面，然后用iframe跨域引用我们的页面。</p>
 <h3 id="1-计算子页面高度"><a href="#1-计算子页面高度" class="headerlink" title="1.计算子页面高度"></a>1.计算子页面高度</h3><p>把问题分解，第一个要解决的是iframe引入的页面高度不等，需要在子页面加载完，计算子页面的高度后调整iframe的高度。</p>
 <pre><code>var resizeHeight = (function() {
@@ -398,8 +291,6 @@
             }
         },false);
 </code></pre>
-          
-        
       
     </div>
 
@@ -407,195 +298,36 @@
       
 
       
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
             
+              <a href="/2016/02/16/node-forever-速记/" rel="next" title="node forever 速记">
+                <i class="fa fa-chevron-left"></i> node forever 速记
+              </a>
             
-              
-                
-                <a class="post-title-link" href="/2016/02/16/node-forever-速记/" itemprop="url">
-                  node forever 速记
-                </a>
-              
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
             
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">發表於</span>
-            <time itemprop="dateCreated" datetime="2016-02-16T18:30:06+08:00" content="2016-02-16">
-              2016-02-16
-            </time>
-          </span>
-
-          
-
-          
+              <a href="/2016/02/22/Work-in-duiba/" rel="prev" title="Work in duiba">
+                Work in duiba <i class="fa fa-chevron-right"></i>
+              </a>
             
-          
-
-          
-
-          
-          
+          </div>
         </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          
-            <h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$ sudo npm install forever -g   <span class="comment">#安装</span></span><br><span class="line">$ sudo forever start ./bin/www          <span class="comment">#启动</span></span><br><span class="line">$ sudo forever stop <span class="number">0</span>           <span class="comment">#关闭</span></span><br><span class="line">$ sudo forever list <span class="comment">#查看</span></span><br><span class="line">$ sudo forever start <span class="operator">-l</span> forever.log -o out.log <span class="operator">-e</span> err.log app.js   <span class="comment">#输出日志和错误</span></span><br></pre></td></tr></table></figure>
-          
-        
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </article>
 
 
-    
-      
 
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/02/16/hello-world/" itemprop="url">
-                  Hello World
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">發表於</span>
-            <time itemprop="dateCreated" datetime="2016-02-16T18:01:16+08:00" content="2016-02-16">
-              2016-02-16
-            </time>
-          </span>
-
-          
-
-          
-            
-          
-
-          
-
-          
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>Welcome to <a href="http://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="http://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="http://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-
-          
-        
+    <div class="post-spread">
       
     </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-
-  </section>
-
-  
+  </div>
 
 
           </div>
@@ -603,6 +335,10 @@
 
 
           
+  <div class="comments" id="comments">
+    
+  </div>
+
 
         </div>
         
@@ -622,8 +358,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目錄
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            本站概覽
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel  sidebar-panel-active ">
+      <section class="site-overview sidebar-panel ">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/default_avatar.jpg"
@@ -660,6 +405,23 @@
 
       </section>
 
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc-indicator-top post-toc-indicator">
+            <i class="fa fa-angle-double-up"></i>
+          </div>
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#遇到的问题"><span class="nav-number">1.</span> <span class="nav-text">遇到的问题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-计算子页面高度"><span class="nav-number">2.</span> <span class="nav-text">1.计算子页面高度</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-fixed在iframe中“失效”"><span class="nav-number">3.</span> <span class="nav-text">2.fixed在iframe中“失效”</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-跨域问题"><span class="nav-number">4.</span> <span class="nav-text">3.跨域问题</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#a-父页面可以如下方式发送"><span class="nav-number">4.1.</span> <span class="nav-text">a.父页面可以如下方式发送</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#b-子页面可以如下方式发送"><span class="nav-number">4.2.</span> <span class="nav-text">b.子页面可以如下方式发送</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#c-监听postmessage"><span class="nav-number">4.3.</span> <span class="nav-text">c.监听postmessage</span></a></li></ol></li></ol></div>
+            
+          </div>
+          <div class="post-toc-indicator-bottom post-toc-indicator">
+            <i class="fa fa-angle-double-down"></i>
+          </div>
+        </section>
       
 
     </div>
@@ -734,6 +496,167 @@
   
 
   
+  
+<script type="text/javascript" src="/js/src/scrollspy.js?v=0.5.0"></script>
+
+<script type="text/javascript" id="sidebar.toc.highlight">
+  $(document).ready(function () {
+    var tocSelector = '.post-toc';
+    var $tocSelector = $(tocSelector);
+    var activeCurrentSelector = '.active-current';
+
+    $tocSelector
+      .on('activate.bs.scrollspy', function () {
+        var $currentActiveElement = $(tocSelector + ' .active').last();
+
+        removeCurrentActiveClass();
+        $currentActiveElement.addClass('active-current');
+
+        $tocSelector[0].scrollTop = $currentActiveElement.position().top;
+      })
+      .on('clear.bs.scrollspy', function () {
+        removeCurrentActiveClass();
+      });
+
+    function removeCurrentActiveClass () {
+      $(tocSelector + ' ' + activeCurrentSelector)
+        .removeClass(activeCurrentSelector.substring(1));
+    }
+
+    function processTOC () {
+      getTOCMaxHeight();
+      toggleTOCOverflowIndicators();
+    }
+
+    function getTOCMaxHeight () {
+      var height = $('.sidebar').height() -
+                   $tocSelector.position().top -
+                   $('.post-toc-indicator-bottom').height();
+
+      $tocSelector.css('height', height);
+
+      return height;
+    }
+
+    function toggleTOCOverflowIndicators () {
+      tocOverflowIndicator(
+        '.post-toc-indicator-top',
+        $tocSelector.scrollTop() > 0 ? 'show' : 'hide'
+      );
+
+      tocOverflowIndicator(
+        '.post-toc-indicator-bottom',
+        $tocSelector.scrollTop() >= $tocSelector.find('ol').height() - $tocSelector.height() ? 'hide' : 'show'
+      )
+    }
+
+    $(document).on('sidebar.motion.complete', function () {
+      processTOC();
+    });
+
+    $('body').scrollspy({ target: tocSelector });
+    $(window).on('resize', function () {
+      if ( $('.sidebar').hasClass('sidebar-active') ) {
+        processTOC();
+      }
+    });
+
+    onScroll($tocSelector);
+
+    function onScroll (element) {
+      element.on('mousewheel DOMMouseScroll', function (event) {
+          var oe = event.originalEvent;
+          var delta = oe.wheelDelta || -oe.detail;
+
+          this.scrollTop += ( delta < 0 ? 1 : -1 ) * 30;
+          event.preventDefault();
+
+          toggleTOCOverflowIndicators();
+      });
+    }
+
+    function tocOverflowIndicator (indicator, action) {
+      var $indicator = $(indicator);
+      var opacity = action === 'show' ? 1 : 0;
+      $indicator.velocity ?
+        $indicator.velocity('stop').velocity({
+          opacity: opacity
+        }, { duration: 100 }) :
+        $indicator.stop().animate({
+          opacity: opacity
+        }, 100);
+    }
+
+  });
+</script>
+
+<script type="text/javascript" id="sidebar.nav">
+  $(document).ready(function () {
+    var html = $('html');
+    var TAB_ANIMATE_DURATION = 200;
+    var hasVelocity = $.isFunction(html.velocity);
+
+    $('.sidebar-nav li').on('click', function () {
+      var item = $(this);
+      var activeTabClassName = 'sidebar-nav-active';
+      var activePanelClassName = 'sidebar-panel-active';
+      if (item.hasClass(activeTabClassName)) {
+        return;
+      }
+
+      var currentTarget = $('.' + activePanelClassName);
+      var target = $('.' + item.data('target'));
+
+      hasVelocity ?
+        currentTarget.velocity('transition.slideUpOut', TAB_ANIMATE_DURATION, function () {
+          target
+            .velocity('stop')
+            .velocity('transition.slideDownIn', TAB_ANIMATE_DURATION)
+            .addClass(activePanelClassName);
+        }) :
+        currentTarget.animate({ opacity: 0 }, TAB_ANIMATE_DURATION, function () {
+          currentTarget.hide();
+          target
+            .stop()
+            .css({'opacity': 0, 'display': 'block'})
+            .animate({ opacity: 1 }, TAB_ANIMATE_DURATION, function () {
+              currentTarget.removeClass(activePanelClassName);
+              target.addClass(activePanelClassName);
+            });
+        });
+
+      item.siblings().removeClass(activeTabClassName);
+      item.addClass(activeTabClassName);
+    });
+
+    $('.post-toc a').on('click', function (e) {
+      e.preventDefault();
+      var targetSelector = NexT.utils.escapeSelector(this.getAttribute('href'));
+      var offset = $(targetSelector).offset().top;
+      hasVelocity ?
+        html.velocity('stop').velocity('scroll', {
+          offset: offset  + 'px',
+          mobileHA: false
+        }) :
+        $('html, body').stop().animate({
+          scrollTop: offset
+        }, 500);
+    });
+
+    // Expand sidebar on post detail page by default, when post has a toc.
+    NexT.motion.middleWares.sidebar = function () {
+      var $tocContent = $('.post-toc-content');
+
+      if (CONFIG.sidebar === 'post') {
+        if ($tocContent.length > 0 && $tocContent.html().trim().length > 0) {
+          NexT.utils.displaySidebar();
+        }
+      }
+    };
+  });
+</script>
+
+
 
   
 
