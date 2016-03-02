@@ -57,25 +57,34 @@
 
 
 
-<meta name="description" content="执行hexo d，报如下错误The file will have its original line endings in your working directory.Permission denied (publickey).fatal: Could not read from remote repository.
-eval `ssh-agent -s`
-把自定义名字的私有key加入ssh
-s">
+<meta name="description" content="Date格式问题new Date();
+//Fri Aug 21 2015 15:51:55 GMT+0800 (中国标准时间)
+
+new Date(1293879600000);
+new Date(&amp;apos;2011-01-01T11:00:00&amp;apos;) //chrome上表现为加12小时
+new Date(&amp;apos;2011/01/01 11:00:00&amp;apos;)
+new Dat">
 <meta property="og:type" content="article">
-<meta property="og:title" content="hexo 使用问题">
-<meta property="og:url" content="http://yoursite.com/2016/02/22/hexo-使用问题/index.html">
+<meta property="og:title" content="JS Date格式问题">
+<meta property="og:url" content="http://yoursite.com/2016/03/02/JS-Date格式问题/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="执行hexo d，报如下错误The file will have its original line endings in your working directory.Permission denied (publickey).fatal: Could not read from remote repository.
-eval `ssh-agent -s`
-把自定义名字的私有key加入ssh
-s">
-<meta property="og:updated_time" content="2016-03-02T03:23:32.449Z">
+<meta property="og:description" content="Date格式问题new Date();
+//Fri Aug 21 2015 15:51:55 GMT+0800 (中国标准时间)
+
+new Date(1293879600000);
+new Date(&amp;apos;2011-01-01T11:00:00&amp;apos;) //chrome上表现为加12小时
+new Date(&amp;apos;2011/01/01 11:00:00&amp;apos;)
+new Dat">
+<meta property="og:updated_time" content="2016-03-02T03:53:42.443Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="hexo 使用问题">
-<meta name="twitter:description" content="执行hexo d，报如下错误The file will have its original line endings in your working directory.Permission denied (publickey).fatal: Could not read from remote repository.
-eval `ssh-agent -s`
-把自定义名字的私有key加入ssh
-s">
+<meta name="twitter:title" content="JS Date格式问题">
+<meta name="twitter:description" content="Date格式问题new Date();
+//Fri Aug 21 2015 15:51:55 GMT+0800 (中国标准时间)
+
+new Date(1293879600000);
+new Date(&amp;apos;2011-01-01T11:00:00&amp;apos;) //chrome上表现为加12小时
+new Date(&amp;apos;2011/01/01 11:00:00&amp;apos;)
+new Dat">
 
 
 
@@ -93,7 +102,7 @@ s">
   };
 </script>
 
-  <title> hexo 使用问题 | Hexo </title>
+  <title> JS Date格式问题 | Hexo </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="">
@@ -213,7 +222,7 @@ s">
             
             
               
-                hexo 使用问题
+                JS Date格式问题
               
             
           </h1>
@@ -225,8 +234,8 @@ s">
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">發表於</span>
-            <time itemprop="dateCreated" datetime="2016-02-22T11:15:23+08:00" content="2016-02-22">
-              2016-02-22
+            <time itemprop="dateCreated" datetime="2016-03-02T11:52:32+08:00" content="2016-03-02">
+              2016-03-02
             </time>
           </span>
 
@@ -251,12 +260,25 @@ s">
       
 
       
-        <h3 id="执行hexo-d，报如下错误"><a href="#执行hexo-d，报如下错误" class="headerlink" title="执行hexo d，报如下错误"></a>执行hexo d，报如下错误</h3><p>The file will have its original line endings in your working directory.<br>Permission denied (publickey).<br>fatal: Could not read from remote repository.</p>
-<pre><code>eval `ssh-agent -s`
-</code></pre><p>把自定义名字的私有key加入ssh</p>
-<pre><code>ssh-add ~/.ssh/github_rsa
-</code></pre><p>测试</p>
-<pre><code>ssh -T git@github.com
+        <h3 id="Date格式问题"><a href="#Date格式问题" class="headerlink" title="Date格式问题"></a>Date格式问题</h3><pre><code>new Date();
+//Fri Aug 21 2015 15:51:55 GMT+0800 (中国标准时间)
+
+new Date(1293879600000);
+new Date(&apos;2011-01-01T11:00:00&apos;) //chrome上表现为加12小时
+new Date(&apos;2011/01/01 11:00:00&apos;)
+new Date(2011,0,1,11,0,0)
+new Date(&apos;jan 01 2011,11 11:00:00&apos;)
+new Date(&apos;Sat Jan 01 2011 11:00:00&apos;)
+//Sat Jan 01 2011 11:00:00 GMT+0800 (中国标准时间)
+
+new Date(&apos;sss&apos;);
+new Date(&apos;2011/01/01T11:00:00&apos;);
+new Date(&apos;2011-01-01-11:00:00&apos;)
+new Date(&apos;1293879600000&apos;);
+//Invalid Date
+
+new Date(&apos;2011-01-01T11:00:00&apos;)-new Date(&apos;1992/02/11 12:00:12&apos;)
+//596069988000
 </code></pre>
       
     </div>
@@ -268,17 +290,13 @@ s">
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/02/22/Work-in-duiba/" rel="next" title="Work in duiba">
-                <i class="fa fa-chevron-left"></i> Work in duiba
+              <a href="/2016/02/22/hexo-使用问题/" rel="next" title="hexo 使用问题">
+                <i class="fa fa-chevron-left"></i> hexo 使用问题
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2016/03/02/JS-Date格式问题/" rel="prev" title="JS Date格式问题">
-                JS Date格式问题 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -382,7 +400,7 @@ s">
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#执行hexo-d，报如下错误"><span class="nav-number">1.</span> <span class="nav-text">执行hexo d，报如下错误</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Date格式问题"><span class="nav-number">1.</span> <span class="nav-text">Date格式问题</span></a></li></ol></div>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator">

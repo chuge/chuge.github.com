@@ -189,15 +189,108 @@
 
     
     
+
+    
       
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2016/03/02/JS-Date格式问题/" itemprop="url">
+                  JS Date格式问题
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">發表於</span>
+            <time itemprop="dateCreated" datetime="2016-03-02T11:52:32+08:00" content="2016-03-02">
+              2016-03-02
+            </time>
+          </span>
+
+          
+
+          
+            
+          
+
+          
+
+          
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
       
-        
-        
-        
       
 
       
-    
+        
+          
+            <h3 id="Date格式问题"><a href="#Date格式问题" class="headerlink" title="Date格式问题"></a>Date格式问题</h3><pre><code>new Date();
+//Fri Aug 21 2015 15:51:55 GMT+0800 (中国标准时间)
+
+new Date(1293879600000);
+new Date(&apos;2011-01-01T11:00:00&apos;) //chrome上表现为加12小时
+new Date(&apos;2011/01/01 11:00:00&apos;)
+new Date(2011,0,1,11,0,0)
+new Date(&apos;jan 01 2011,11 11:00:00&apos;)
+new Date(&apos;Sat Jan 01 2011 11:00:00&apos;)
+//Sat Jan 01 2011 11:00:00 GMT+0800 (中国标准时间)
+
+new Date(&apos;sss&apos;);
+new Date(&apos;2011/01/01T11:00:00&apos;);
+new Date(&apos;2011-01-01-11:00:00&apos;)
+new Date(&apos;1293879600000&apos;);
+//Invalid Date
+
+new Date(&apos;2011-01-01T11:00:00&apos;)-new Date(&apos;1992/02/11 12:00:12&apos;)
+//596069988000
+</code></pre>
+          
+        
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
 
     
       
@@ -352,16 +445,38 @@
       
         
           
-            <h2 id="只记录不是琐碎的事情"><a href="#只记录不是琐碎的事情" class="headerlink" title="只记录不是琐碎的事情"></a>只记录不是琐碎的事情</h2><h4 id="2015-12-27"><a href="#2015-12-27" class="headerlink" title="2015-12-27"></a>2015-12-27</h4><p>iframe weibo跨域嵌套问题</p>
-<h4 id="2015-12-28"><a href="#2015-12-28" class="headerlink" title="2015-12-28"></a>2015-12-28</h4><p>camera 360（webview不能缩小，定义320宽度的viewport）适配问题</p>
-<h4 id="2015-12-30"><a href="#2015-12-30" class="headerlink" title="2015-12-30"></a>2015-12-30</h4><p>通知用户未领取的礼物</p>
-<h4 id="2016-01-05"><a href="#2016-01-05" class="headerlink" title="2016-01-05"></a>2016-01-05</h4><p>摇奖机新增猴年新年皮肤</p>
-<h4 id="2016-01-18"><a href="#2016-01-18" class="headerlink" title="2016-01-18"></a>2016-01-18</h4><p>前端静态资源发布系统</p>
-<h4 id="2016-01-18-1"><a href="#2016-01-18-1" class="headerlink" title="2016-01-18"></a>2016-01-18</h4><p>刮刮卡新增猴年新年皮肤</p>
-<h4 id="2016-01-20"><a href="#2016-01-20" class="headerlink" title="2016-01-20"></a>2016-01-20</h4><p>收货地址，fastclick版本源码bug</p>
-<h4 id="2016-01-28"><a href="#2016-01-28" class="headerlink" title="2016-01-28"></a>2016-01-28</h4><p>元宵节答题活动-答题配置页面</p>
-<h4 id="2016-02-15"><a href="#2016-02-15" class="headerlink" title="2016-02-15"></a>2016-02-15</h4><p>开发者后台离职同事未提交引起的bug</p>
+            <h2 id="只记录不是琐碎的事情"><a href="#只记录不是琐碎的事情" class="headerlink" title="只记录不是琐碎的事情"></a>只记录不是琐碎的事情</h2><p>格式：<br>日期<br>事件</p>
+<h2 id="思考与问题"><a href="#思考与问题" class="headerlink" title="思考与问题"></a>思考与问题</h2><h4 id="2015-12-27"><a href="#2015-12-27" class="headerlink" title="2015-12-27"></a>2015-12-27</h4><p>iframe weibo跨域嵌套问题</p>
+<pre><code>postmessage跨域
 
+iframe js控制高度
+</code></pre><h4 id="2015-12-28"><a href="#2015-12-28" class="headerlink" title="2015-12-28"></a>2015-12-28</h4><p>camera 360（webview不能缩小，定义320宽度的viewport）适配问题</p>
+<pre><code>定宽viewport，后续修改为rem方式
+</code></pre><h4 id="2015-12-30"><a href="#2015-12-30" class="headerlink" title="2015-12-30"></a>2015-12-30</h4><p>通知用户未领取的礼物</p>
+<h4 id="2016-01-05"><a href="#2016-01-05" class="headerlink" title="2016-01-05"></a>2016-01-05</h4><p>摇奖机新增猴年新年皮肤</p>
+<pre><code>todo: 思考皮肤相同部分css复用
+</code></pre><h4 id="2016-01-18"><a href="#2016-01-18" class="headerlink" title="2016-01-18"></a>2016-01-18</h4><p>前端静态资源发布系统</p>
+<pre><code>todo: 上传模块相关的前后台知识
+
+nodejs，
+formiable
+todo: express -&gt; koa，回调 -&gt; co
+
+js，
+jquery-file-upload
+
+artTemplate
+</code></pre><h4 id="2016-01-18-1"><a href="#2016-01-18-1" class="headerlink" title="2016-01-18"></a>2016-01-18</h4><p>刮刮卡新增猴年新年皮肤</p>
+<h4 id="2016-01-20"><a href="#2016-01-20" class="headerlink" title="2016-01-20"></a>2016-01-20</h4><p>收货地址，fastclick版本源码bug</p>
+<pre><code>todo: fastclick源码版本问题，但后续还有问题，还需要继续
+</code></pre><h4 id="2016-01-28"><a href="#2016-01-28" class="headerlink" title="2016-01-28"></a>2016-01-28</h4><p>元宵节答题活动-答题配置页面</p>
+<pre><code>todo: 思考后台管理系统运用react或vue或avalon，
+      按最初的想法，想在这个系统试行node做中间层，来进行前后端分离
+</code></pre><h4 id="2016-02-15"><a href="#2016-02-15" class="headerlink" title="2016-02-15"></a>2016-02-15</h4><p>开发者后台离职同事未提交引起的bug</p>
+<h4 id="2016-02-25"><a href="#2016-02-25" class="headerlink" title="2016-02-25"></a>2016-02-25</h4><p>新增秒杀单品页面</p>
+<pre><code>js date 格式问题 &lt;a href=&quot;/2016/03/02/JS-Date格式问题/&quot;&gt;&lt;/a&gt;
+todo: 秒杀计时器，可以再进行抽象，重构
+</code></pre>
           
         
       
@@ -723,7 +838,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">5</span>
+              <span class="site-state-item-count">6</span>
               <span class="site-state-item-name">文章</span>
             </a>
           </div>
