@@ -58,21 +58,21 @@
 
 
 <meta name="description" content="执行hexo d，报如下错误The file will have its original line endings in your working directory.Permission denied (publickey).fatal: Could not read from remote repository.
-eval ssh-agent -s
-把自定义名字的私有key加入sshssh-">
+eval `ssh-agent -s`
+把自定义名字的私有key加入ssh">
 <meta property="og:type" content="article">
 <meta property="og:title" content="hexo 使用问题">
 <meta property="og:url" content="http://yoursite.com/2016/02/22/hexo-使用问题/index.html">
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="执行hexo d，报如下错误The file will have its original line endings in your working directory.Permission denied (publickey).fatal: Could not read from remote repository.
-eval ssh-agent -s
-把自定义名字的私有key加入sshssh-">
-<meta property="og:updated_time" content="2016-03-02T03:20:44.537Z">
+eval `ssh-agent -s`
+把自定义名字的私有key加入ssh">
+<meta property="og:updated_time" content="2016-03-02T03:22:35.993Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="hexo 使用问题">
 <meta name="twitter:description" content="执行hexo d，报如下错误The file will have its original line endings in your working directory.Permission denied (publickey).fatal: Could not read from remote repository.
-eval ssh-agent -s
-把自定义名字的私有key加入sshssh-">
+eval `ssh-agent -s`
+把自定义名字的私有key加入ssh">
 
 
 
@@ -249,9 +249,9 @@ eval ssh-agent -s
 
       
         <h3 id="执行hexo-d，报如下错误"><a href="#执行hexo-d，报如下错误" class="headerlink" title="执行hexo d，报如下错误"></a>执行hexo d，报如下错误</h3><p>The file will have its original line endings in your working directory.<br>Permission denied (publickey).<br>fatal: Could not read from remote repository.</p>
-<p>eval <code>ssh-agent -s</code></p>
-<p>把自定义名字的私有key加入ssh<br>ssh-add ~/.ssh/github_rsa</p>
-<p>测试<br>ssh -T git@github.com</p>
+<pre><code>eval `ssh-agent -s`
+</code></pre><p>把自定义名字的私有key加入ssh<br>    ssh-add ~/.ssh/github_rsa</p>
+<p>测试<br>    ssh -T git@github.com</p>
 
       
     </div>
