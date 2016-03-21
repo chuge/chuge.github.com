@@ -57,22 +57,28 @@
 
 
 
-<meta name="description" content="遇到的问题手机端，在父页面内嵌跨域iframe的实践， 关于fixed失效和devicemotion失效 与第三方客户某微，需要交互。应对方要求，他们提供父级页面，然后用iframe跨域引用我们的页面。
-1.计算子页面高度把问题分解，第一个要解决的是iframe引入的页面高度不等，需要在子页面加载完，计算子页面的高度后调整iframe的高度。
-var resizeHeight = (functio">
+<meta name="description" content="1.对于父容器和自己的宽高都不知道的出处：https://css-tricks.com/centering-in-the-unknown/
+例如如下3个按钮内的文字，他们的高度是不固定的，因为字数不固定，需要对他们进行绝对水平垂直居中。
+
+CSS:123456789101112131415161718192021.Center-Container.is-Inline &amp;#123;     text">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Iframe跨域嵌套页面">
-<meta property="og:url" content="http://yoursite.com/2016/02/19/Iframe跨域嵌套页面/index.html">
+<meta property="og:title" content="居中方式">
+<meta property="og:url" content="http://yoursite.com/2016/03/21/居中方式/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="遇到的问题手机端，在父页面内嵌跨域iframe的实践， 关于fixed失效和devicemotion失效 与第三方客户某微，需要交互。应对方要求，他们提供父级页面，然后用iframe跨域引用我们的页面。
-1.计算子页面高度把问题分解，第一个要解决的是iframe引入的页面高度不等，需要在子页面加载完，计算子页面的高度后调整iframe的高度。
-var resizeHeight = (functio">
-<meta property="og:updated_time" content="2016-02-22T02:44:22.638Z">
+<meta property="og:description" content="1.对于父容器和自己的宽高都不知道的出处：https://css-tricks.com/centering-in-the-unknown/
+例如如下3个按钮内的文字，他们的高度是不固定的，因为字数不固定，需要对他们进行绝对水平垂直居中。
+
+CSS:123456789101112131415161718192021.Center-Container.is-Inline &amp;#123;     text">
+<meta property="og:image" content="http://ww3.sinaimg.cn/large/6e47194dgw1f24leoxde2j204x051jrq.jpg">
+<meta property="og:image" content="http://ww1.sinaimg.cn/large/6e47194dgw1f24lwisy3mj2034037749.jpg">
+<meta property="og:image" content="http://ww3.sinaimg.cn/large/6e47194dgw1f24lxf3ljdj203a03kjrf.jpg">
+<meta property="og:updated_time" content="2016-03-21T09:26:05.538Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Iframe跨域嵌套页面">
-<meta name="twitter:description" content="遇到的问题手机端，在父页面内嵌跨域iframe的实践， 关于fixed失效和devicemotion失效 与第三方客户某微，需要交互。应对方要求，他们提供父级页面，然后用iframe跨域引用我们的页面。
-1.计算子页面高度把问题分解，第一个要解决的是iframe引入的页面高度不等，需要在子页面加载完，计算子页面的高度后调整iframe的高度。
-var resizeHeight = (functio">
+<meta name="twitter:title" content="居中方式">
+<meta name="twitter:description" content="1.对于父容器和自己的宽高都不知道的出处：https://css-tricks.com/centering-in-the-unknown/
+例如如下3个按钮内的文字，他们的高度是不固定的，因为字数不固定，需要对他们进行绝对水平垂直居中。
+
+CSS:123456789101112131415161718192021.Center-Container.is-Inline &amp;#123;     text">
 
 
 
@@ -90,7 +96,7 @@ var resizeHeight = (functio">
   };
 </script>
 
-  <title> Iframe跨域嵌套页面 | Hexo </title>
+  <title> 居中方式 | Hexo </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="">
@@ -210,7 +216,7 @@ var resizeHeight = (functio">
             
             
               
-                Iframe跨域嵌套页面
+                居中方式
               
             
           </h1>
@@ -222,8 +228,8 @@ var resizeHeight = (functio">
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">發表於</span>
-            <time itemprop="dateCreated" datetime="2016-02-19T18:40:05+08:00" content="2016-02-19">
-              2016-02-19
+            <time itemprop="dateCreated" datetime="2016-03-21T17:09:16+08:00" content="2016-03-21">
+              2016-03-21
             </time>
           </span>
 
@@ -248,49 +254,13 @@ var resizeHeight = (functio">
       
 
       
-        <hr>
-<h3 id="遇到的问题"><a href="#遇到的问题" class="headerlink" title="遇到的问题"></a>遇到的问题</h3><p>手机端，在父页面内嵌跨域iframe的实践， 关于fixed失效和devicemotion失效 与第三方客户某微，需要交互。应对方要求，他们提供父级页面，然后用iframe跨域引用我们的页面。</p>
-<h3 id="1-计算子页面高度"><a href="#1-计算子页面高度" class="headerlink" title="1.计算子页面高度"></a>1.计算子页面高度</h3><p>把问题分解，第一个要解决的是iframe引入的页面高度不等，需要在子页面加载完，计算子页面的高度后调整iframe的高度。</p>
-<pre><code>var resizeHeight = (function() {
-        var heightCalculated;
+        <h3 id="1-对于父容器和自己的宽高都不知道的"><a href="#1-对于父容器和自己的宽高都不知道的" class="headerlink" title="1.对于父容器和自己的宽高都不知道的"></a>1.对于父容器和自己的宽高都不知道的</h3><p>出处：<a href="https://css-tricks.com/centering-in-the-unknown/" target="_blank" rel="external">https://css-tricks.com/centering-in-the-unknown/</a></p>
+<p>例如如下3个按钮内的文字，他们的高度是不固定的，因为字数不固定，需要对他们进行绝对水平垂直居中。</p>
+<p><img src="http://ww3.sinaimg.cn/large/6e47194dgw1f24leoxde2j204x051jrq.jpg" alt=""><br><img src="http://ww1.sinaimg.cn/large/6e47194dgw1f24lwisy3mj2034037749.jpg" alt=""><br><img src="http://ww3.sinaimg.cn/large/6e47194dgw1f24lxf3ljdj203a03kjrf.jpg" alt=""></p>
+<p>CSS:<br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="class">.Center-Container</span><span class="class">.is-Inline</span> <span class="rules">&#123;   </span><br><span class="line">  <span class="rule"><span class="attribute">text-align</span>:<span class="value"> center</span></span>;  </span><br><span class="line">  <span class="rule"><span class="attribute">overflow</span>:<span class="value"> auto</span></span>;  </span><br><span class="line">&#125;</span>  </span><br><span class="line">  </span><br><span class="line"><span class="class">.Center-Container</span><span class="class">.is-Inline</span><span class="pseudo">:after</span>,  </span><br><span class="line"><span class="class">.is-Inline</span> <span class="class">.Center-Block</span> <span class="rules">&#123;  </span><br><span class="line">  <span class="rule"><span class="attribute">display</span>:<span class="value"> inline-block</span></span>;  </span><br><span class="line">  <span class="rule"><span class="attribute">vertical-align</span>:<span class="value"> middle</span></span>;  </span><br><span class="line">&#125;</span>  </span><br><span class="line">  </span><br><span class="line"><span class="class">.Center-Container</span><span class="class">.is-Inline</span><span class="pseudo">:after</span> <span class="rules">&#123;  </span><br><span class="line">  <span class="rule"><span class="attribute">content</span>:<span class="value"> <span class="string">''</span></span></span>;  </span><br><span class="line">  <span class="rule"><span class="attribute">height</span>:<span class="value"> <span class="number">100%</span></span></span>;  </span><br><span class="line">  <span class="rule"><span class="attribute">margin-left</span>:<span class="value"> -<span class="number">0.25em</span></span></span>; <span class="comment">/* To offset spacing. May vary by font */</span>  </span><br><span class="line">&#125;</span>  </span><br><span class="line">  </span><br><span class="line"><span class="class">.is-Inline</span> <span class="class">.Center-Block</span> <span class="rules">&#123;  </span><br><span class="line">  <span class="rule"><span class="attribute">max-width</span>:<span class="value"> <span class="number">99%</span></span></span>; <span class="comment">/* Prevents issues with long content causes the content block to be pushed to the top */</span>  </span><br><span class="line">  <span class="comment">/* max-width: calc(100% - 0.25em) <span class="comment">/* Only for IE9+ */</span>   </span><br><span class="line">&#125;</span></span></span><br></pre></td></tr></table></figure></p>
+<p>HTML:<br><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"Center-Container is-Inline"</span>&gt;</span>  </span><br><span class="line">  <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"Center-Block"</span>&gt;</span>  </span><br><span class="line">    <span class="comment">&lt;!-- CONTENT --&gt;</span>  </span><br><span class="line">  <span class="tag">&lt;/<span class="title">div</span>&gt;</span>  </span><br><span class="line"><span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p>CODEPEN:<br><a href="http://codepen.io/chriscoyier/pen/gsodI" target="_blank" rel="external">http://codepen.io/chriscoyier/pen/gsodI</a></p>
 
-        return function(target, iframeHeight) {
-            //only reset height when height is not initialized and not equal to previous calculated
-            if (!heightCalculated || (!!heightCalculated &amp;&amp; iframeHeight !== heightCalculated)) {
-                $(target).height(iframeHeight);
-                heightCalculated = iframeHeight;
-            }
-        };
-    })();
-
-    $(&apos;iframe&apos;).unbind(&apos;load&apos;).load(function(){
-    var target = this;
-    var iframeHeight = target.contentWindow.document.body.scrollHeight;
-    resizeHeight(target, iframeHeight);
-    setInterval(function(){
-        resizeHeight(target, iframeHeight);
-    }, 100);
-});
-</code></pre><h3 id="2-fixed在iframe中“失效”"><a href="#2-fixed在iframe中“失效”" class="headerlink" title="2.fixed在iframe中“失效”"></a>2.fixed在iframe中“失效”</h3><p>因为子页面的fixed元素是相对于子页面定位的，而我们滚动的滚动条是父级页面的。 解决方案是通过监听滚动条事件或者设置一个较小时间的轮询，来检测当前父页面的滚动条的scrollTop,也就是滚动条往下滚动了多少，然后在子页面中获取当前父页面的scrollTop，根据可视区域的高度window.innerHeight，去计算子页面fixed元素的位置。</p>
-<h3 id="3-跨域问题"><a href="#3-跨域问题" class="headerlink" title="3.跨域问题"></a>3.跨域问题</h3><p>这种方案当父页面和子页面在同域名下是没有问题的，但当父子页面不在同一个域名下，互相不能调用各自window里面的属性。这时候就要通过使用HTML5的新API，postmessage去解决。</p>
-<h4 id="a-父页面可以如下方式发送"><a href="#a-父页面可以如下方式发送" class="headerlink" title="a.父页面可以如下方式发送"></a>a.父页面可以如下方式发送</h4><pre><code>document.querySelector(&apos;iframe&apos;).contentWindow.postMessage({
-            source:&apos;fff&apos;,
-            type:&apos;parentInfo&apos;,
-            parentHeight:window.innerHeight,
-            parentScrollY:window.scrollY
-        },&apos;http://192.168.190.133&apos;);
-</code></pre><h4 id="b-子页面可以如下方式发送"><a href="#b-子页面可以如下方式发送" class="headerlink" title="b.子页面可以如下方式发送"></a>b.子页面可以如下方式发送</h4><pre><code>window.parent.postMessage({
-        source:&apos;www.duiba.com.cn&apos;,
-        viewport:&apos;DPI&apos;
-    }, &apos;http://192.168.1.133&apos;);
-</code></pre><h4 id="c-监听postmessage"><a href="#c-监听postmessage" class="headerlink" title="c.监听postmessage"></a>c.监听postmessage</h4><pre><code>window.addEventListener(&quot;message&quot;, function(event) {
-            if(event.data.source==&apos;fff&apos; &amp;&amp; event.data.type==&apos;parentInfo&apos;){
-                $(&apos;.win-modal .modal-dialog&apos;).css({
-                    top: event.data.parentScrollY + event.data.parentHeight / 2
-                });
-            }
-        },false);
-</code></pre>
       
     </div>
 
@@ -301,17 +271,13 @@ var resizeHeight = (functio">
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/02/16/node-forever-速记/" rel="next" title="node forever 速记">
-                <i class="fa fa-chevron-left"></i> node forever 速记
+              <a href="/2016/03/02/JS-Date格式问题/" rel="next" title="JS Date格式问题">
+                <i class="fa fa-chevron-left"></i> JS Date格式问题
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2016/02/22/Work-in-duiba/" rel="prev" title="Work in duiba">
-                Work in duiba <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -415,7 +381,7 @@ var resizeHeight = (functio">
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#遇到的问题"><span class="nav-number">1.</span> <span class="nav-text">遇到的问题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-计算子页面高度"><span class="nav-number">2.</span> <span class="nav-text">1.计算子页面高度</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-fixed在iframe中“失效”"><span class="nav-number">3.</span> <span class="nav-text">2.fixed在iframe中“失效”</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-跨域问题"><span class="nav-number">4.</span> <span class="nav-text">3.跨域问题</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#a-父页面可以如下方式发送"><span class="nav-number">4.1.</span> <span class="nav-text">a.父页面可以如下方式发送</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#b-子页面可以如下方式发送"><span class="nav-number">4.2.</span> <span class="nav-text">b.子页面可以如下方式发送</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#c-监听postmessage"><span class="nav-number">4.3.</span> <span class="nav-text">c.监听postmessage</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-对于父容器和自己的宽高都不知道的"><span class="nav-number">1.</span> <span class="nav-text">1.对于父容器和自己的宽高都不知道的</span></a></li></ol></div>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator">
